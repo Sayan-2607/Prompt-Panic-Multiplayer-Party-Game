@@ -1,0 +1,7 @@
+node_modules/
+.netlify/
+.vite/
+artifacts/
+coverage/
+*.log
+.DS_Store

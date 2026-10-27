@@ -1,0 +1,27 @@
+{
+  "name": "prompt-panic-netlify",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "vite build && node scripts/package-functions.mjs",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run typecheck && npm run build && npm test && node scripts/verify-package.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.6"
+  },
+  "devDependencies": {
+    "@netlify/functions": "6.0.3",
+    "@netlify/zip-it-and-ship-it": "16.5.1",
+    "@types/node": "22.19.0",
+    "fflate": "0.8.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
+  }
+}

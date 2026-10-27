@@ -1,0 +1,48 @@
+{
+  "verifiedAt": "2026-10-27T07:27:49.610Z",
+  "node": "v24.22.1",
+  "productionBuild": "passed",
+  "packagedFunction": "passed: imported compiled game.mjs from the Netlify-produced ZIP and executed all actions",
+  "storage": "real Netlify Blobs SDK against a local HTTP fixture implementing ETags and conditional writes; uncached strong-read endpoint verified",
+  "rounds": [
+    {
+      "round": 1,
+      "Alex": 100,
+      "Sam": 100
+    },
+    {
+      "round": 2,
+      "Alex": 200,
+      "Sam": 100
+    },
+    {
+      "round": 3,
+      "Alex": 200,
+      "Sam": 100
+    }
+  ],
+  "winner": "Alex",
+  "finalScores": {
+    "Alex": 200,
+    "Sam": 100
+  },
+  "endpoint": "/.netlify/functions/game",
+  "functionZipSHA256": "be8a0cac1b5ad1098d085ec7ff3a210686b2ce637765bc9f76e98fef63c8fc73",
+  "liveNetlifyDeployment": "not performed; no account was accessed",
+  "notes": "Concurrency and ETag retry tests additionally run against an atomic test store. The source project is rebuilt by Netlify on signed-in drag-and-drop deployment.",
+  "browserVerification": {
+    "status": "passed",
+    "clients": [
+      "desktop",
+      "phone-sized iframe: 375 px content width"
+    ],
+    "rounds": 3,
+    "finalScores": {
+      "Sam": 300,
+      "Alex": 200
+    },
+    "winner": "Sam",
+    "phoneHorizontalOverflow": false,
+    "date": "2026-10-27"
+  }
+}
